@@ -71,7 +71,6 @@ public class Sorting {
     }
 
     public static void main (String args[]) {
-        Scanner sc = new Scanner(System.in);
         int arr[] = new int[]{3,7,1,8,4,2,2};
         System.out.println(Arrays.toString(Quick_sort(arr, 0, arr.length-1)));
     }
