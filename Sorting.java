@@ -11,7 +11,7 @@ public class Sorting {
                     arr[j+1] = temp;
                 }
             }
-        }
+        }    
         return arr;
     }
 
@@ -31,9 +31,10 @@ public class Sorting {
     }
 
     public static int[] Insertion_sort(int arr[]) {
+        //loop to track unsorted part
         for(int i = 1; i< arr.length; i++) {
-            int current = arr[i];
-            int prev = i-1;
+            int current = arr[i]; 
+            int prev = i-1; //To track the sorted part
             while(prev >= 0 && current < arr[prev]) {
                 arr[prev+1] = arr[prev];
                 prev--;
